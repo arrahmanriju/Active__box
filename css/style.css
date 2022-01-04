@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* ===================================================================navbar part css start=========================== */
+#navbar {}
+
+#navbar .navbar-main {
+    position: fixed;
+    z-index: 99;
+    text-align: center;
+    display: flex;
+}
+
+#navbar .navbar-main .logo {
+    width: 400px;
+}
+
+#navbar .navbar-main .logo img {
+    margin-top: 20px;
+}
+
+#navbar .navbar-main .nav-home {
+    width: 770px;
+    text-align: right;
+}
+
+#navbar .navbar-main .nav-home ul li {
+    display: inline-block;
+    padding-right: 60px
+}
+
+#navbar .navbar-main .nav-home ul li a {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+/* =====================================banner part css start============================= */
+#banner {
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 225px;
+    padding-bottom: 150px;
+    width: 100%;
+    position: relative;
+}
+
+#banner::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 46, 74, 0.9);
+}
+
+#banner .banner-main .banner-text {
+    text-align: center;
+    position: relative;
+    z-index: 11;
+    color: white;
+}
+
+#banner .banner-main .banner-text h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    font-weight: 800;
+}
+
+#banner .banner-main .banner-text h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    font-weight: 800;
+}
+
+#banner .banner-main .banner-text p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 0px 200px;
+    padding-bottom: 70px;
+}
+
+#banner .banner-main .banner-text a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #e84545;
+    padding: 17px 50px;
+    color: white;
+    transition: all linear 0.4s;
+}
+
+#banner .banner-main .banner-text a:hover {
+    background: #53545c;
+}
+
+/* ==============================================clean-code part css start===================================== */
+#clean {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+#clean .clean-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#clean .clean-main .clean-iteam {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+#clean .clean-main .clean-iteam img {
+    margin-bottom: 30px;
+}
+
+#clean .clean-main .clean-iteam h3 {
+    margin-bottom: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#clean .clean-main .clean-iteam p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 0px 5px;
+}
+
+/* =================================gallery part css start======================= */
+#gallery {
+    margin-bottom: 100px;
+}
+
+#gallery .gallery-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery .gallery-main .gallery-item {
+    width: 25%;
+    position: relative;
+
+}
+
+#gallery .gallery-main .gallery-item .gallery-image img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    padding-right: 0;
+}
+
+#gallery .gallery-main .gallery-item .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(232, 69, 69, 0.9);
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+
+#gallery .gallery-main .gallery-item .overlay .over-text {
+    text-align: center;
+    color: white;
+    padding-top: 40%;
+}
+
+#gallery .gallery-main .gallery-item .overlay .over-text h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    padding-bottom: 7px;
+}
+
+#gallery .gallery-main .gallery-item .overlay .over-text p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#gallery .gallery-main .gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+/* =========================================================team part css start================================ */
+#team {
+    margin: 100px 0px;
+}
+
+#team .team-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#team .team-main .team-item {
+    width: 22%;
+}
+
+#team .team-main .team-item .team-it-img img {
+    width: 100%;
+}
+
+#team .team-main .team-item .team-text {
+    text-align: left;
+    margin-top: 30px;
+}
+
+#team .team-main .team-item .team-text h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #2d3033;
+}
+
+#team .team-main .team-item .team-text h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #e84545;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+#team .team-main .team-item .team-text p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6c7279;
+    line-height: 21px;
+}
+
+#team .team-main .team-item .icon {
+    margin-top: 30px;
+    color: #c6cacc;
+    margin-right: 10px;
+    display: flex;
+}
+
+#team .team-main .team-item .icon .iicon {
+    border: 1px solid #c6cacc;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all linear 0.4s;
+}
+
+#team .team-main .team-item .icon .iicon:hover {
+    background: #e84545;
+    color: white;
+    border: 1px solid #e84545;
+}
+
+/* =====================================slider part css start============================ */
+#slider {
+    background-color: #53354a;
+}
+#slider .slider-main{
+    display: flex;
+}
+#slider .slider-main .slider-item{
+    width: 50%;
+}
+#slider .slider-main .slider-item img{
+    width: 100%;
+}
+#slider .slider-main .slider-text{
+    width: 50%;
+    margin-left: 85px;
+    margin-top: 110px;
+}
+#slider .slider-main .slider-text h4{
+   color: #dfdade;
+   font-family: 'Cardo', serif;
+   font-style: italic;
+   font-size: 30px;
+   margin-right: 350px;
+}
+#slider .slider-main .slider-text h6{
+    color: #dfdade;
+    font-family: 'Raleway', serif;
+    font-weight: 800;
+    font-size: 13px;
+    margin-top: 8px;
+ }
+ #slider .slider-main .border{
+     display: flex;
+     margin-right: 300px;
+     margin-left: 100px;
+ }
+ #slider .slider-main .border .boro{
+     width: 12px;
+     height: 12px;
+     border-radius: 50%;
+     background-color: #755d6e;
+     margin-top: 50px;
+     margin-right: 8px;
+     cursor: pointer;
+     transition: all linear 0.4s;
+ }
+ #slider .slider-main .border .boro:hover{
+     background-color: white;
+ }
+/* =============================================download part css start ============================== */
+#download{
+    margin: 100px 0px;
+}
+#download .down-text{
+    text-align: center;
+}
+#download .down-text h3{
+    font-family: 'Raleway', serif;
+    font-weight: 300;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+#download .down-text h5{
+    font-family: 'Raleway', serif;
+    font-weight: 800;
+    font-size: 13px;
+    margin-bottom: 40px;
+}
+#download .down-text a{
+    font-family: 'Raleway', serif;
+    font-weight: 700;
+    font-size: 13px;
+    background-color: #53545c;
+    color: white;
+    padding: 19px 84px;
+    transition: all linear 0.4s;
+}
+#download .down-text a:hover{
+    background-color: #e84545;
+}
+/* ====================location part css start ========================================= */
+#loca{
+    background-color: #3a3e64;
+    padding: 60px 0px;
+}
+#loca .loca-main{
+    display: flex;
+    justify-content: space-between;
+}
+#loca .loca-main .loca-item{
+    width: 300px;
+    text-align: center;
+}
+#loca .loca-main .loca-head{
+    color: white;
+    margin-bottom: 15px;
+}
+#loca .loca-main .loca-head h4{
+    font-family: 'Raleway', serif;
+    font-weight: 800;
+    font-size: 14px;
+}
+#loca .loca-main .loca-text{
+    color: #afb0bc;
+} 
+#loca .loca-main .loca-text h5{
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+#loca .loca-main .loca-text i{
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all linear 0.4s;
+    border-radius: 2px;
+}
+#loca .loca-main .loca-text i:hover{
+    background: #e84545;
+    border: #e84545 solid 1px;
+}
+/* ========================================copy right part start=================================== */
+#copy{
+    background: #313454;
+}
+#copy .copy-main{
+    margin: 0px 380px;
+    text-align: center;
+    padding: 20px 0px;
+    color: #737378;
+}
+#copy .copy-main h3{
+    font-family: 'Raleway', serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
+#copy .copy-main span{
+    color: white;
+}
+#copy .copy-main span i{
+    color: #e84545;
+}
